@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "partytown": "partytown copylib src/public/~partytown"
+  },
+  "devDependencies": {
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "@builder.io/partytown": "^0.10.2",
+    "@fontsource-variable/inter": "^5.1.0",
+    "@fontsource-variable/inter-tight": "^5.1.0",
+    "@fontsource/inter": "^5.1.0",
+    "aos": "^2.3.4",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.16",
+    "split-type": "^0.3.4",
+    "three": "^0.170.0"
+  }
+}

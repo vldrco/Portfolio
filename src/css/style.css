@@ -1,0 +1,478 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  --bs-body-bg: var(--bs-light);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: var(--bs-emphasis-color);
+  font-size: 1rem;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.container {
+  max-width: 1400px;
+}
+
+.loop {
+  animation: loopText 9s infinite linear;
+  font-size: 10rem;
+}
+
+@keyframes loopText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#canvas-container {
+  width: 100%;
+  height: 100%;
+}
+
+#canvas {
+  position: absolute;
+}
+
+@media (max-width: 991.98px) { 
+  #wireframe-orb {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .font-resize {
+    font-size: calc(1.275rem + 0.2vw) !important;
+  }
+}
+
+.horizontal-item {
+  will-change: transform;
+}
+
+.horizontal-item svg {
+  width: 100%;
+  height: 25%;
+}
+
+.borders {
+  position: absolute;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f8f9fa;
+  z-index: 2;
+  /*text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;*/
+}
+
+.title {
+  z-index: -1;
+}
+
+/* .scroll-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+} */
+
+/* .scroll-item {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#scroll-container {
+  width: max-content;
+  white-space: nowrap;
+}
+
+.font-helvetica {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+#experience h4 {
+  display: block;
+  /*margin-bottom: 10px;*/
+  margin-top: 10px;
+}
+
+@media (max-width: 575.98px) {
+  #experience h3 {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #experience h3 {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #experience h3 {
+    padding: 3rem;
+  }
+}
+
+#experience p {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#experience .row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#experience .col-lg-12 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding: 1.5rem;
+}
+
+#floatingMessage {
+  height: 180px;
+}
+
+/*.socials a {
+  color: black;
+}
+
+.socials > div {
+  transition: color 0.3s ease;
+}*/
+
+#experience > .col-lg-4 > .row > div:hover,
+#experience > .col-lg-4 > .row > div:hover p,
+#experience > .col-lg-4 > .row > div:hover h4 {
+  background-color: black;
+  color: white;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.exp-borders > div {
+  border: 1px solid black;
+}
+
+.exp-borders-right > div {
+  border: 1px solid black;
+}
+
+@media (max-width: 575.98px) {
+  .exp-borders > div {
+    border-bottom: none;
+  }
+  .exp-borders-right > div {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .exp-borders > div {
+    border-left: none;
+  }
+
+  .exp-borders-right > div {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  #net-border {
+    border-bottom: none !important;
+  }
+
+  #stack-border {
+    border-bottom: 1px solid black !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .exp-borders > div {
+    border-left: none;
+  }
+
+  .exp-borders-right > div {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  #net-border {
+    border-bottom: none !important;
+  }
+
+  #stack-border {
+    border-bottom: 1px solid black !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .exp-borders > div {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .exp-borders-right > div {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid black;
+  }
+
+  #net-border {
+    border-bottom: 1px solid black !important;
+  }
+
+  #stack-border {
+    border-bottom: 1px solid black !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .exp-borders > div {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .exp-borders-right > div {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid black;
+  }
+
+  #net-border {
+    border-bottom: 1px solid black !important;
+  }
+
+  #stack-border {
+    border-bottom: 1px solid black !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .exp-borders > div {
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .exp-borders-right > div {
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 1px solid black;
+  }
+
+  #net-border {
+    border-bottom: 1px solid black !important;
+  }
+
+  #stack-border {
+    border-bottom: 1px solid black !important;
+  }
+}
+
+/*.border-outer {
+  border: 1px solid black;
+}
+
+.border-inner {
+  border: 1px solid black;
+}*/
+
+/* add opacity to parent divs without child inheriting opacity */
+.border-outer,
+.border-inner {
+    position: relative;
+}
+
+.border-outer::before,
+.border-inner::before {
+    border: 1px solid black;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.1);  Adjust the opacity level here */
+    z-index: 1; /* Ensures the pseudo-element is behind the card content */
+    pointer-events: none; /* Allows clicking through to the actual content */
+}
+
+@keyframes fadeInOutStaggered {
+  0%, 25% {
+      opacity: 0;
+  }
+  25%, 50% {
+      opacity: 1; /* First element (inner) fades in */
+  }
+  50%, 75% {
+      opacity: 1; /* Second element (outer) fades in */
+  }
+  75%, 100% {
+      opacity: 0; /* Both elements fade out together */
+  }
+}
+
+.border-inner::before {
+  animation: fadeInOutStaggered 4s infinite; /* Duration of one full cycle */
+}
+
+.border-outer::before {
+  animation: fadeInOutStaggered 4s infinite 1s; /* Delays start by 1.5 seconds */
+}
+
+.contact-title-borders {
+  border-left: 1px solid black;
+}
+
+.cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .contact-title-borders {
+    border-bottom: 1px solid black;
+    border-left: none;
+  }
+}
+
+.word-container {
+  display: flex;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content; /* Dynamically fit content */
+}
+
+/* Typing effect */
+.type {
+  overflow: hidden;                  /* Hides text overflow */
+  white-space: nowrap;               /* Prevents text wrapping */
+  border-right: 3px solid black;     /* Optional blinking cursor effect */            /* Optional: gives a typewriter look */
+}
+
+.animate-typing {
+  animation: typing 1.5s steps(20, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#orb-canvas {
+  position: absolute;
+}
+
+#hero {
+  min-height: 100dvh;
+}
+
+.font-silkscreen {
+  font-family: Silkscreen, serif;
+}
+
+.stroke {
+  animation: stroke 2s infinite ease-in-out;
+}
+
+@keyframes stroke {
+  100% {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #f8f9fa;
+  }
+}
+
+.ed-svg > svg {
+  width: 100%;
+  height: 15%;
+}
+
+.card-image {
+  height: 500px;
+  filter: grayscale(0%);
+}
+
+.arrow-left span {
+  display: none;
+}
+
+.arrow-left:hover span {
+  display: inline;
+  animation: slide-in-right 0.5s;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .space-svg-2 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .space-svg-1 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #relevant > .container > .row {
+    padding-bottom: 3rem;
+  }
+}
