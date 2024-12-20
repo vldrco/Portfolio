@@ -71,11 +71,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function onWindowResize() {
       const canvasContainer = document.getElementById("canvas-container");
 
-      // Update the camera aspect ratio and projection matrix
+      // Update camera aspect ratio and projection matrix
       camera.aspect = canvasContainer.clientWidth / canvasContainer.clientHeight;
       camera.updateProjectionMatrix();
 
-      // Update the size of the renderer to fit the container
+      // Update size of the renderer to fit the container
       renderer.setSize(canvasContainer.clientWidth, canvasContainer.clientHeight);
     }
 
@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // get the element
   const text = document.querySelector('.typing-text');
 
-  // get the word from the element's text content, excluding the exclamation mark
+  // get word from the element's text content
   const word = "Let's talk";
 
   // start typing effect
@@ -265,15 +265,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const LETTER_TYPE_DELAY = 75;
     let letterIndex = 0;
 
-    // Start typing forward only
+    // Start typing forward
     const wordTypeInterval = setInterval(() => {
       letterIndex++;
 
       if (letterIndex === word.length) {
-        clearInterval(wordTypeInterval); // Stop when the word is fully typed
+        // Stop when the word is fully typed
+        clearInterval(wordTypeInterval);
       }
 
-      // Update only the typed part, keeping the blinking exclamation mark
+      // Update typed part
       const textToType = word.substring(0, letterIndex);
       element.innerHTML = `${textToType}<span class="cursor">!</span>`;
     }, LETTER_TYPE_DELAY);
@@ -284,10 +285,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   ScrollTrigger.create({
     trigger: text,
-    start: "top 75%", // Adjust to when in view (75% from top of viewport)
+    // Start animation when 75% of the element is in view
+    start: "top 75%",
     onEnter: () => setTyper(text, word),
     onEnterBack: () => setTyper(text, word),
-    toggleActions: "restart none none none" // Restart the animation each time in view
+    // Restart the animation each time in view
+    toggleActions: "restart none none none"
   });
 
   const textElements = document.querySelectorAll('.type');
@@ -295,9 +298,11 @@ document.addEventListener("DOMContentLoaded", () => {
   textElements.forEach((textElement) => {
     ScrollTrigger.create({
       trigger: textElement,
-      start: "top 80%",          // Start animation when 80% of the element is in view
-      onEnter: () => textElement.classList.add('animate-typing'), // Add animation class on enter
-      onLeaveBack: () => textElement.classList.remove('animate-typing') // Remove class on scroll back up
+      start: "top 80%",
+      // Add animation class on enter
+      onEnter: () => textElement.classList.add('animate-typing'),
+      // Remove class on scroll
+      onLeaveBack: () => textElement.classList.remove('animate-typing')
     });
   });
 });
