@@ -1,21 +1,11 @@
 // CSS
 import '/css/style.css'
 import 'lenis/dist/lenis.css'
-import 'aos/dist/aos.css'
 // JS
 import * as THREE from 'three'
 import Lenis from 'lenis'
 import { gsap } from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import AOS from 'aos'
-
-document.addEventListener('DOMContentLoaded', function () {
-  AOS.init({
-    offset: 200,
-    delay: 0,
-    duration: 400,
-  });
-});
 
 // Lenis
 // Initialize Lenis
