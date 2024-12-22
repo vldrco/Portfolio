@@ -10,7 +10,17 @@ body {
   color: var(--bs-emphasis-color);
   font-size: 1rem;
   line-height: 1.5;
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif !important;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .container {
