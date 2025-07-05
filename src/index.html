@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="This is the personal portfolio of Valdir Correia, a simple software developer." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Valdir Correia" />
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="vldrco" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Valdir Correia</title>
+  </head>
+
+  <body>
+    <button class="theme-toggler">
+    </button>
+    <header id="header">
+      <nav class="navbar" role="navigation" aria-label="main navigation" id="mainNav">
+        <div class="navbar-brand">
+          <div class="local-time"></div>
+          <button role="button" class="navbar-toggler">
+            MENU
+          </button>
+        </div>
+
+        <div class="temporal-info">
+          <div class="date"></div>
+          <div class="weather"></div>
+        </div>
+
+        <div class="navbar-menu">
+          <a class="navbar-item" href="#about">
+            •
+          </a>
+          <a class="navbar-item" href="#experience">
+            •
+          </a>
+          <a class="navbar-item" href="#projects">
+            •
+          </a>
+          <a class="navbar-item" href="#footer">
+            •
+          </a>
+        </div>
+      </nav>
+
+      <div class="container">
+        <h1>
+          <span>Valdir</span>
+          <span>Correia</span>
+        </h1>
+      </div>
+      <div class="container">
+        <p>
+          A software developer blending minimalist
+          aesthetics and performance
+          into modern web solutions.
+        </p>
+      </div>
+      <div id="orb-canvas"></div>
+      <div class="gradient"></div>
+    </header>
+
+    <main>
+
+      <section id="about">
+        <div class="container">
+          <h2>About</h2>
+          <hr>
+          <div class="box">
+            <h3>
+              My focus is on delivering quality and minimalist designs
+              that enhance user experience while maintaining
+              performance and functionality.
+            </h3>
+            <p>
+              I have hands-on web development experience across different contexts
+              with technologies such as HTML, CSS, JavaScript and
+              Python, as well as frameworks like Django and Svelte.
+            </p>
+            <p>
+              I earned my Bachelor's degree in Information Technology in 2024
+              where I completed relevant courses in software development and
+              other areas such as Network Installation and Administration.
+            </p>
+            <p>
+              I'm fluent in English and Portuguese with a basic understanding of Spanish
+              and I can adapt to working in diverse environments and teams.
+            </p>
+            <p>
+              I'm eager to learn and grow in this ever evolving tech industry,
+              and I'm excited to contribute my skills to innovative projects.
+            </p>
+          </div>
+          <div class="box">
+            <div class="roles">
+              <p>Software Development</p>
+              <p>Network and Systems Administration</p>
+            </div>
+            <a href="https://www.linkedin.com/in/valdir-correia-945417209" target="_blank">
+              LinkedIn
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </a>
+            <a href="https://github.com/vldrco" target="_blank">
+              GitHub
+              <i class="bi bi-arrow-up-right-circle-fill"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience">
+        <div class="container">
+          <h2>
+            Experience
+          </h2>
+          <div class="swiper experience-swiper">
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-header">
+                    <h3>Network Technician</h3>
+                    <div class="company">
+                      <a href="https://agim.co.ao/" target="_blank">
+                        AGIM IT and Telecomunications
+                      </a>
+                      <p>2023 — 2024</p>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Installed and configured over 40 5G SIM routers
+                      in both residential and business settings. Services included
+                      optimizing signal strength, securing high-speed connections,
+                      and configuring network devices such as Layer 2/3
+                      switches and routers with static IPs, DHCP, port forwarding,
+                      and LAN/WLAN integration.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-header">
+                    <h3>Front-End Developer</h3>
+                    <div class="company">
+                      <p>Freelance</p>
+                      <p>2023 — Present</p>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <p>
+                      Designed and developed responsive, user-centric web pages
+                      using HTML, CSS, and JavaScript, ensuring cross-browser
+                      compatibility and mobile optimization. Collaborated
+                      directly with clients to gather requirements, refine UI/UX, and
+                      deliver customized solutions that balanced
+                      functionality, performance, and aesthetics.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <hr>
+          <div class="swiper projects-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-header">
+                    <h3>Quasatis Tech</h3>
+                    <div class="field">
+                      <p>Landing Page</p>
+                      <p>2025</p>
+                    </div>
+                  </div>
+                  <figure>
+                    <img src="/web.svg" alt="web" loading="lazy">
+                  </figure>
+                  <div class="swiper-custom-buttons">
+                    <div class="wrapper">
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <p>
+                      A vibrant, visually engaging landing page designed
+                      for a business solutions company specializing in innovative digital
+                      services.
+                    </p>
+                    <p>
+                      This was my second freelance project, built using
+                      Vite and enhanced with animation libraries such as Lenis, Motion
+                      One, and AOS (Animate On Scroll) to create a dynamic user experience.
+                    </p>
+                  </div>
+                  <div class="link">
+                    <a href="https://www.quasatis.com/" target="_blank">
+                      See Project
+                      <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="box">
+                  <div class="box-header">
+                    <h3>Umbundo Translator</h3>
+                    <div class="field">
+                      <p>AI Translator</p>
+                      <p>2025</p>
+                    </div>
+                  </div>
+                  <figure>
+                    <img src="/ai.svg" alt="ai" loading="lazy">
+                  </figure>
+                  <div class="swiper-custom-buttons">
+                    <div class="wrapper">
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <p>
+                      A web app that translates Portuguese to Umbundu,
+                      a Bantu language spoken in Angola, using a fine-tuned GPT-4o mini
+                      model.
+                    </p>
+                    <p>
+                      Built with Python and Streamlit, this project
+                      was developed as part of a high school senior mentorship program.
+                    </p>
+                  </div>
+                  <div class="link">
+                    <a href="https://tradutor-portugues-umbundo.streamlit.app/" target="_blank">
+                      See Project
+                      <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box last">
+                  <div class="box-header">
+                    <h3>Visage Studio</h3>
+                    <div class="field">
+                      <p>Landing Page</p>
+                      <p>2024</p>
+                    </div>
+                  </div>
+                  <figure>
+                    <img src="/rocket.svg" alt="rocket" loading="lazy">
+                  </figure>
+                  <div class="swiper-custom-buttons">
+                    <div class="wrapper">
+                      <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div>
+                    </div>
+                  </div>
+                  <div class="description">
+                    <p>
+                      A sleek, dark-themed landing page for an audiovisual studio,
+                      built with Bootstrap, Lenis, GSAP, and AOS (Animate On
+                      Scroll).
+                    </p>
+                    <p>
+                      My first freelance project and a major learning experience,
+                      both technically and in working with a client for the
+                      first time.
+                    </p>
+                  </div>
+                  <div class="link">
+                    <a href="https://visageangola.onrender.com/" target="_blank">
+                      See Project
+                      <i class="bi bi-arrow-up-right-circle-fill"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hero">
+        <div class="container">
+          <h2>
+            <i class="bi bi-quote"></i>
+            Less, but better.
+            <span>Dieter Rams</span>
+          </h2>
+          <p>
+            Elegance lies not in adding more but in refining what exists, ensuring
+            that every line of code and every feature serves a purpose. Simplicity
+            isn't a lack of complexity, it's the mastery of it.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="box">
+        <hr>
+      </div>
+      <div class="container">
+        <div class="box">
+          <a href="mailto:vldrco.dev@gmail.com">vldrco.dev@gmail.com</a>
+          <p>Drop a Message</p>
+        </div>
+        <div class="box">
+          <a href="https://www.linkedin.com/in/valdir-correia-945417209" target="_blank">
+            LinkedIn
+            <i class="bi bi-arrow-up-right-circle-fill"></i>
+          </a>
+          <a href="https://github.com/vldrco" target="_blank">
+            GitHub
+            <i class="bi bi-arrow-up-right-circle-fill"></i>
+          </a>
+          <p>&copy; Valdir Correia <span class="year"></span></p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
