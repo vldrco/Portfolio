@@ -189,7 +189,7 @@ async function getTime() {
 
 async function getWeather() {
   const url =
-    "http://api.weatherapi.com/v1/current.json?key=d2fbb4e7f0a64445943195304250406";
+    "https://api.weatherapi.com/v1/current.json?key=d2fbb4e7f0a64445943195304250406";
   if ("geolocation" in navigator) { //The geolocation API is present in modern browsers
     navigator.geolocation.getCurrentPosition(
       (position) => {
@@ -367,7 +367,7 @@ function main() {
   // storing the function in a variable to avoid calling it immediately
   // only this one because it takes a parameter and will be called in the observer
   let remButtons = () => remButton(swiperButtons);
-  
+
   // call functions on DOMContentLoaded
   // this creates an initial state and the observer will take care of future changes
   document.addEventListener("DOMContentLoaded", remButton(swiperButtons));
